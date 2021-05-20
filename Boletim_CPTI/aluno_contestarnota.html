@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+	<title>Boletim Online Aluno</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div><i class="bi bi-house-fill"><a href="aluno_HomeBoletim.htm" target="self"><!--<img src="house-fill.svg">-->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg></a></i></div>
+
+
+
+    <ul class="nav nav-tabs">
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" target="self" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">1° Etapa</a><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="aluno_1° EtapaBoletim1.htm" target="self">1° Bimestre</a>
+  </li>
+            <li><a class="dropdown-item" href="aluno_1° EtapaBoletim2.htm" target="self">2° Bimestre</a>
+  </li></ul></li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" target="self" aria-expanded="false">2° Etapa</a><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="aluno_2° EtapaBoletim1.htm" target="self">1° Bimestre</a>
+  </li>
+            <li><a class="dropdown-item" href="aluno_2° EtapaBoletim2.htm" target="self">2° Bimestre</a>
+  </li></ul></li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#"  target="self" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">3° Etapa</a><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="aluno_3° EtapaBoletim1.htm" target="self">1° Bimestre</a>
+  </li>
+            <li><a class="dropdown-item" href="aluno_3° EtapaBoletim2.htm" target="self">2° Bimestre</a>
+  </li></ul></li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" target="self" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contato</a><ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="aluno_contestar.htm" target="self">Contestar sua nota</a></li>
+          </ul></li></ul>
+ 
+        </div></nav></nav>
+        <br><br>
+
+        <script type="text/javascript">
+function showDiv(select)
+{
+        if(select.value=="1Etapa")
+        {
+                document.getElementById('et1').style.display = "block";
+                document.getElementById('et2').style.display = "none";
+                document.getElementById('et3').style.display = "none";
+        }
+        else
+        {
+                if(select.value=="2Etapa")
+                {
+                        document.getElementById('et1').style.display = "none";
+                        document.getElementById('et2').style.display = "block";
+                        document.getElementById('et3').style.display = "none";
+                }
+                else
+                {
+                        if(select.value=="3Etapa")
+                        {
+                                document.getElementById('et1').style.display = "none";
+                                document.getElementById('et2').style.display = "none";
+                                document.getElementById('et3').style.display = "block";
+                        }
+                        else
+                        {
+                                document.getElementById('et1').style.display = "none";
+                                document.getElementById('et2').style.display = "none";
+                                document.getElementById('et3').style.display = "none";
+                        }
+                }
+        }
+}
+</script>
+ 
+        </div></nav></nav>
+        <br><br>
+        <center><div><h3>Contestar sua nota</h3></div></center>
+
+
+
+   <form name="a" id="a">
+       <div><tr><td>Etapa:</td></tr><label><h6><label>*</label></h6></label>
+        </div>
+        <select class="form-select" arial-label="Defult select" OnChange="showDiv(this);">
+                <option selected>Escolha uma etapa</option>
+                <option value="1Etapa">1a Etapa</option>
+                <option value="2Etapa">2a Etapa</option>
+                <option value="3Etapa">3a Etapa</option>
+        </select><br>
+
+        <div id="et1" style="display:none">
+<tr><td>Disciplina:</td></tr>                <select class="form-select" arial-label="Defult select">
+                        <option selected>Escolha uma disciplina</option>
+                        <option value="FWI">Ferramentas da Web I</option>
+                        <option value="PGI">Programacao I</option>
+                        <option value="MM">Montagem e Manutencao</option>
+                </select>
+        </div>
+        <div id="et2" style="display:none">
+               <div><tr><td>Disciplina:</td></tr><label><h6><label>*</label></h6></label></div>
+                <select class="form-select" arial-label="Defult select">
+                        <option selected>Escolha uma disciplina</option>
+                        <option value="FWII">Ferramentas da Web II</option>
+                        <option value="PGII">Programacao II</option>
+                        <option value="EST">Estatisticas</option>
+                </select>
+        </div>
+        <div id="et3" style="display:none">
+                <div><tr><td>Disciplina:</td></tr><label><h6><label>*</label></h6></label></div>
+                <select class="form-select" arial-label="Defult select">
+                        <option selected>Escolha uma disciplina</option>
+                        <option value="FWIII">Ferramentas da Web III</option>
+                        <option value="PGIII">Programacao III</option>
+                        <option value="PRH">Psicologia das Relacoes Humanas</option>
+                </select>
+        </div>
+</form><br>
+
+<div><tr><td>Bimestre:</td></tr><label><h6><label>*</label></h6></label></div>
+<select class="form-select" aria-label="Default select example">
+  <option selected>Escolha o bimestre</option>
+  <option value="1° Bimetre">1° Bimestre</option>
+  <option value="2° Bimetre">2° Bimestre</option>
+</select><br></div>
+
+<div><tr><td>Email do Aluno:</td></tr><label><h6><label>*</label></h6></label></div>
+  <div>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@examplo.com"></div><br>
+
+<div class="mb-3">
+  <div><tr><td>Explique sua contestação:</td></tr><label><h6><label>*</label></h6></label></div>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div><label><h6>Todos os campos com '*' são obrigatórias!</h6></label></div><br>
+<button type="button" class="btn btn-outline-info">Enviar</button>
+</TD></TR></TABLE></center>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
